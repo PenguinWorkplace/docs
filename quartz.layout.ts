@@ -5,7 +5,6 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head({
     extraHead: `
-      <meta name="tg:site_verification" content="g7j8/rPFXfhyrq5q0QQV7EsYWv4=" />
       <meta property="telegram:channel" content="@linuxitpenguin" />
     `,
   }),

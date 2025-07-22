@@ -4,14 +4,10 @@ import React from "react"
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head({
-    extraHead: (
-      <>
-        <meta name="tg:site_verification" content="g7j8/rPFXfhyrq5q0QQV7EsYWv4=" />
-   
-        <meta property="telegram:channel" content="@linuxitpenguin" />
-      
-      </>
-    ),
+    extraHead: `
+      <meta name="tg:site_verification" content="g7j8/rPFXfhyrq5q0QQV7EsYWv4=" />
+      <meta property="telegram:channel" content="@linuxitpenguin" />
+    `,
   }),
   header: [],
   afterBody: [],
@@ -22,6 +18,7 @@ export const sharedPageComponents: SharedLayout = {
     },
   }),
 }
+
 
 // components for pages that display a single page (e.g. a single note)
 export const defaultContentPageLayout: PageLayout = {

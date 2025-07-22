@@ -1,3 +1,66 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+:root {
+  --background: #101417; /* background */
+  --surface: #101417; /* surface */
+  --on-surface: #E0E3E8; /* onSurface */
+  --primary: #96CCF8; /* primary */
+  --on-primary: #00344F; /* onPrimary */
+  --primary-container: #004B70; /* primaryContainer */
+  --on-primary-container: #CAE6FF; /* onPrimaryContainer */
+  --secondary: #B7C9D9; /* secondary */
+  --on-secondary: #22323F; /* onSecondary */
+  --secondary-container: #384956; /* secondaryContainer */
+  --on-secondary-container: #D3E5F6; /* onSecondaryContainer */
+  --tertiary: #CFC0E8; /* tertiary */
+  --on-tertiary: #362B4A; /* onTertiary */
+  --outline: #8B9198; /* outline */
+  --link-color: #96CCF8; /* primary для ссылок */
+  --text-color: #E0E3E8; /* onSurface для текста */
+  --card-background: #1C2024; /* surfaceContainer */
+  --card-border: #41474D; /* surfaceVariant */
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  background-color: var(--surface);
+  color: var(--on-surface);
+}
+
+.card {
+  background-color: var(--card-background);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+header, footer {
+  background-color: var(--surface);
+  color: var(--on-surface);
+}
+
+button, .btn {
+  background-color: var(--primary);
+  color: var(--on-primary);
+  border: 1px solid var(--outline);
+  border-radius: 4px;
+  padding: 8px 16px;
+}
+
+button:hover, .btn:hover {
+  background-color: var(--primary-container);
+  color: var(--on-primary-container);
+}

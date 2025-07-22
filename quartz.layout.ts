@@ -3,13 +3,22 @@ import * as Component from "./quartz/components"
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
-  head: Component.Head(),
+  head: Component.Head({
+    extraHead: (
+      <>
+        <meta name="tg:site_verification" content="g7j8/rPFXfhyrq5q0QQV7EsYWv4=" />
+   
+        <meta property="telegram:channel" content="@linuxitpenguin" />
+      
+      </>
+    ),
+  }),
   header: [],
   afterBody: [],
   footer: Component.Footer({
     links: {
       GitHub: "https://github.com/PenguinWorkplace/docs/",
-      "Telegram": "https://t.me/linuxitpenguin",
+      Telegram: "https://t.me/linuxitpenguin",
     },
   }),
 }
